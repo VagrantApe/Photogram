@@ -36,8 +36,13 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    @post.destroy
-    redirect_to posts_path
+    if @post.destroy
+      flash[:success] = "Your post has been deleted"
+      redirect_to root_path
+    else
+      flash[:alert] = "Destroy FAILED, kill yourself"
+      redirect_to root_path
+    end
   end
 
   private
