@@ -1,4 +1,4 @@
-.posts-wrapper.row
+.posts-wrapper
   .post
     .post-head
       .thumb-img
@@ -27,3 +27,4 @@
       .comment-form.col-sm-11
         = form_for [post, post.comments.new] do |f|
           = f.text_field :context, placeholder: 'Add a comment...'
+          = f.button :submit, class: 'btn-success'
