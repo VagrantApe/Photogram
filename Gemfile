@@ -25,10 +25,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'paperclip','4.3.0'
 gem 'simple_form'
 gem 'devise'
+gem 'kaminari', '~> 0.16.3'
+gem 'jquery-turbolinks'
 
 gem 'bootstrap-sass', '~> 3.3.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
+gem 'autoprefixer-rails'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
